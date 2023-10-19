@@ -27,7 +27,7 @@
     
     <div class="inputbox">
       <input type="submit" value="Đăng ký" name="register">
-      <button><a href="">Đăng nhập</a></button>
+      <button><a href="./1_dang_nhap.php">Đăng nhập</a></button>
     </div>
   </form>
   <?php

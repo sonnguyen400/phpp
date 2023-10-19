@@ -25,7 +25,7 @@
     </div>
     <div class="inputbox">
       <input type="submit" value="Đăng nhập" name="login">
-      <button ><a href="">Đăng ký</a></button>
+      <button ><a href="./1_dang_ky.php">Đăng ký</a></button>
      
     </div>
   </form>

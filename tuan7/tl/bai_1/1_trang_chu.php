@@ -10,8 +10,6 @@
         }
         
     }
-    
-   
     if(isset($_POST["register"])){
         $pass=$_POST["register_password_again"];
         $repass=$_POST["register_password"];
@@ -33,6 +31,10 @@
                 setcookie("account",json_encode($account,true));
             }
         }
+    }
+    if(isset($_POST["dx"])){
+        setcookie("account",'',time()-3600);
+        header("Location: "."./1_dang_nhap.php");
     }
 
 
@@ -97,7 +99,7 @@ a{
                 echo json_decode($_COOKIE["account"],true)["name"];
             }
         ?>
-        <form action="" method="post">
+        <form action="./1_trang_chu.php" method="post">
             <input type="submit" name="dx" value="Đăng xuất">
         </form>
     </div>

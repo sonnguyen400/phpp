@@ -72,6 +72,7 @@ a{
         <form action="./1_trang_chu.php" method="post">
             <input type="submit" name="dx" value="Đăng xuất">
         </form>
+        <a href="./bai_5.php"><button>Thêm câu hỏi</a></a>
     </div>
 </body>
 </html>

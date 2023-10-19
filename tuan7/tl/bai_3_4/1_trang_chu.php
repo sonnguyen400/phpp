@@ -10,6 +10,9 @@
         $_SESSION["login_ing"]=null;
         header("Location: "."./1_dang_nhap.php");
     }
+    if(isset($_POST["newpage"])){
+        header("Location: "."./bai_3.php");
+    }
     
 ?>
 <!DOCTYPE html>
@@ -71,6 +74,9 @@ a{
         ?>
         <form action="./1_trang_chu.php" method="post">
             <input type="submit" name="dx" value="Đăng xuất">
+        </form>
+        <form action="./1_trang_chu.php" method="post">
+            <input type="submit" name="newpage" value="Chuyển hướng trang mới">
         </form>
     </div>
 </body>
